@@ -38,20 +38,20 @@ public class RollTheDieGame {
             int spacesLeft = totalSpaces - currentSpace;
             total = total + die;
 
-            if (currentSpace < 20) {
+            if (currentSpace < totalSpaces) {
                 System.out.println("Roll # " + (i + 1) + ": you've rolled a " + die + ". You are now on space " + currentSpace + " and have " + spacesLeft + " more to go.");
             }
 
-            if (currentSpace == 20) {
+            if (currentSpace == totalSpaces) {
                 System.out.println("Roll # " + (i + 1) + ": you've rolled a " + die + ". You're on space 20. Congrats! You win.");
                 break;
-            } else if (currentSpace > 20) {
+            } else if (currentSpace > totalSpaces) {
                 System.out.println("Roll # " + (i + 1) + ": you've rolled a " + die + ". Sorry, you lost. You got over 20. Good luck for the next time!");
                 break;
             }
 
         }
-        if (total < 20)
+        if (total < totalSpaces)
             System.out.println("Sorry, you lost. You don't reach 20. Good luck for the next time!");
 
     }
