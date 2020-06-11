@@ -1,7 +1,6 @@
-package Chapter14;
+package chapter14;
 
 public class Player {
-
     private String name;
 
     private String guess;
@@ -25,4 +24,5 @@ public class Player {
     public Player(String name) {
         this.name = name;
     }
+
 }

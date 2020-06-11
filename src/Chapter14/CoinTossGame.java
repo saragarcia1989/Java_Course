@@ -1,8 +1,8 @@
-package Chapter14;
+package chapter14;
 
 import java.util.Scanner;
 
-import static Chapter14.Coin.*;
+import static chapter14.Coin.*;
 
 public class CoinTossGame {
 
